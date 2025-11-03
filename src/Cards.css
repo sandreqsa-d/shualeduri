@@ -1,0 +1,24 @@
+body {
+    background-image: url("/public/Group\ 10.png");
+    background-position: left;
+    background-repeat: no-repeat;
+
+}
+
+.firstCard {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #722c72;
+    width: 447px;
+    font-size: 10px;
+    align-items: baseline;
+}
+
+.Month {
+    display: flex;
+    color: white;
+}
+.secondCard{
+    color: white;
+}
