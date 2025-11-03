@@ -1,5 +1,5 @@
 import React from 'react'
-import Forms from './forms'
+import Forms from './Forms'
 
 const App = () => {
   return (
