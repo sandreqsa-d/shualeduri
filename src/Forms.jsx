@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Cards from './Cards';
 import './Forms.css';
+import Cards from './cards';
 
 const Forms = () => {
   const CardRegex = /^\d{4} \d{4} \d{4} \d{4}$/;
