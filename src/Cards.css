@@ -1,24 +1,32 @@
-body {
-    background-image: url("/public/Group\ 10.png");
-    background-position: left;
-    background-repeat: no-repeat;
-
+.firstCard {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 350px;
+  margin: 20px auto;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-.firstCard {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background-color: #722c72;
-    width: 447px;
-    font-size: 10px;
-    align-items: baseline;
+.firstCard h1 {
+  font-size: 18px;
+  margin: 8px 0;
+  letter-spacing: 2px;
 }
 
 .Month {
-    display: flex;
-    color: white;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
-.secondCard{
-    color: white;
+
+.secondCard {
+  background-color: gray;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 350px;
+  margin: 10px auto;
+  text-align: right;
+  font-family: 'Space Grotesk', sans-serif;
 }
