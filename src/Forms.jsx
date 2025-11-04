@@ -4,7 +4,7 @@ import Cards from './Cards';
 
 const Forms = () => {
   const CardRegex = /^\d{4} \d{4} \d{4} \d{4}$/;
-  const MonthRegex = /^(0[1-9]|1[0-2])$/;
+  const MonthRegex = /^(0[1-9]|2[0-9])$/;
   const YearRegex = /^\d{2}$/;
   const CvcRegex = /^\d{3}$/;
 
@@ -61,7 +61,7 @@ const Forms = () => {
 
       <button className="submitBtn" onClick={() => {
         if (
-         
+
           CardRegex.test(cardNum) &&
           MonthRegex.test(month) &&
           YearRegex.test(year) &&
@@ -79,6 +79,27 @@ const Forms = () => {
       }}>
         Submit
       </button>
+
+      <button
+        style={{
+          padding: '10px 20px',
+          fontSize: '16px',
+          border: 'none',
+          borderRadius: '10px',
+          cursor: 'pointer',
+          backgroundColor: 'blue',
+          color: 'white'
+          
+        }}
+
+        onClick={() => {
+          const t = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', t);
+        }}
+      >
+        Toggle Theme
+      </button>
+
 
       <Cards text={text} cardNum={cardNum} month={month} year={year} cvc={cvc} />
     </div>
