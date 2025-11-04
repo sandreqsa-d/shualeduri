@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Forms.css';
-import Cards from './cards';
+import Cards from './Cards';
 
 const Forms = () => {
   const CardRegex = /^\d{4} \d{4} \d{4} \d{4}$/;
@@ -72,6 +72,7 @@ const Forms = () => {
           localStorage.setItem("year", year);
           localStorage.setItem("cardNum", cardNum);
           localStorage.setItem("cvc", cvc);
+          alert("your info has been added!!")
         } else {
           alert("Check your inputs");
         }
