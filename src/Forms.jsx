@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Forms.css';
+import './forms.css';
 import Cards from './Cards';
 
 const Forms = () => {
