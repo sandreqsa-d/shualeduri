@@ -1,17 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.allC {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+
+.bigC {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.smallC {
+  width: 21px;
+  height: 21px;
+  background-color: none;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
 .firstCard {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  width: 350px;
-  margin: 20px auto;
-  font-family: 'Space Grotesk', sans-serif;
+  padding: 28px 32px;
+  background: linear-gradient(135deg, #47a2ff, #6348fe, #d53aff, #ff834a);
+  border-radius: 8px;
+  width: 447px;
 }
 
 .firstCard h1 {
   font-size: 18px;
   margin: 8px 0;
   letter-spacing: 2px;
+
 }
 
 .Month {
@@ -20,13 +54,41 @@
   align-items: center;
 }
 
+.text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25.5px;
+}
+
+/* SECOND CARD */
 .secondCard {
-  background-color: gray;
   color: white;
-  padding: 15px;
-  border-radius: 12px;
-  width: 350px;
-  margin: 10px auto;
+  padding: 23px 0;
+  margin-top: 41px;
+  border-radius: 10px;
+  background-color: #979797;
+  position: absolute;
+  width: 447px;
+  left: 91px;
+  max-height: 245px
+}
+
+.secondCard h1 {
+  width: 80%;
+  background-color: #adb5be;
   text-align: right;
-  font-family: 'Space Grotesk', sans-serif;
+  margin: auto;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  margin-bottom: 33px;
+}
+
+.secondCard p {
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  margin-bottom: 24px;
 }
